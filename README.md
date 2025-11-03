@@ -6,36 +6,36 @@
 
 <h3>🌟Features</h3>
 <p>
-- Fluid layout with responsive design
-- Two-tier navigation menu with SlickNav mobile support
-- Scalable logo and consistent branding
-- SEO-friendly meta tags and semantic HTML
-- JavaScript/jQuery form validation with confirmation messages
-- Pages for service offerings, user reviews, destinations, events, and registration
+- Fluid layout with responsive design<br>
+- Two-tier navigation menu with SlickNav mobile support<br>
+- Scalable logo and consistent branding<br>
+- SEO-friendly meta tags and semantic HTML<br>
+- JavaScript/jQuery form validation with confirmation messages<br>
+- Pages for service offerings, user reviews, destinations, events, and registration<br>
 </p>
 
 <h3>🧠Challenges & Learning</h3>
 <p>
-- Resizing and scaling the logo for responsiveness
-- Styling dropdown menus across browsers
-- Implementing real-time form validation and feedback
-- Ensuring accessibility and usability across devices
+- Resizing and scaling the logo for responsiveness<br>
+- Styling dropdown menus across browsers<br>
+- Implementing real-time form validation and feedback<br>
+- Ensuring accessibility and usability across devices<br>
 </p>
 
 <h3>📚Technologies Used</h3>
 <p>
-- HTML5, CSS3
-- JavaScript & jQuery
-- SlickNav for mobile navigation
-- Responsive design with media queries
+- HTML5, CSS3<br>
+- JavaScript & jQuery<br>
+- SlickNav for mobile navigation<br>
+- Responsive design with media queries<br>
 </p>
 
 <h3>🚀Getting Started</h3>
 <p>
-To view the website:
-1. Clone the repository
-2. Open index.html in your browser
-> Note: Live Server is not required or supported for this project.  
+To view the website:<br>
+1. Clone the repository<br>
+2. Open index.html in your browser<br>
+> Note: Live Server is not required or supported for this project.<br>
 </p>
 
 <h3>👩‍💻Author</h3>
