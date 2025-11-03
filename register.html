@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive layout setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO meta tags for search engines -->
+  <meta name="description" content="Register with TravelTails UK to share your pet-friendly travel experiences or join upcoming events.">
+  <meta name="keywords" content="pet travel registration, TravelTails UK, pet-friendly events, user reviews">
+  <!-- Title -->
+  <title>Register with TravelTails UK</title>
+  <!-- Link to style with css -->
+  <link rel="stylesheet" href="main.css">
+  <!-- SlickNav CSS for responsive mobile navigation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  <!-- jQuery and SlickNav JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="index_01.html"><img src="Logos/resized_logo.png" alt="TravelTails UK Logo" class="logo"></a>
+        <ul id="menu">
+          <li><a href="index_01.html">Home</a></li>
+          <li><a href="service_offerings_02.html">Service Offerings</a></li>
+          <li><a href="about_us_03.html">About Us</a></li>
+          <li><a href="user_reviews_04.html">User Reviews</a></li>
+          <li><a href="events_and_promotions_06.html">Events</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="signup-section">
+      <h1>Register with TravelTails UK</h1>
+      <p>Sign up to share your review or join upcoming pet-friendly events.</p>
+
+      <!-- Registration form -->
+      <form class="signup-form" id="registrationForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comments">Comments (optional):</label>
+        <input type="text" id="comments" name="comments">
+
+        <button type="submit" class="cta">Submit</button>
+      </form>
+      
+      <!-- Confirmation message shown after successul submission -->
+      <p id="confirmation-message">🎉 Thank you for registering! We’ll be in touch soon with pet-friendly updates.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TravelTails UK. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for SlickNav -->
+  <script>
+    $(document).ready(function(){
+      // Initialize SlickNav for mobile navigation
+      $('#menu').slicknav({ prependTo: '.nav-container', label: 'Menu' });
+
+      // Form submission handler with validation
+      $('#registrationForm').on('submit', function(e){
+        e.preventDefault();
+        const name = $('#name').val().trim();
+        const address = $('#address').val().trim();
+        const email = $('#email').val().trim();
+
+        if (name === '' || address === '' || email === '') {
+          alert('Please fill in all required fields.');
+        } else {
+          $('#confirmation-message').addClass('show');
+          this.reset();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

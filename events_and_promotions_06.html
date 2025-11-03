@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Declares this document as a HTML5 -->
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive layout -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags for search engines -->
+    <meta name="description" content="TravelTails UK helps pet owners find verified pet-friendly travel options across the UK.">
+    <meta name="keywords" content="pet travel, dog-friendly hotels, TravelTails UK, pet-friendly restaurants, UK travel with pets">
+    
+    <!-- Title show in browser page -->
+    <title>Events and Promotions</title>
+    <!-- Link HTML to main CSS page -->
+    <link rel="stylesheet" href="main.css">
+    <!-- SlickNav CSS for responsive mobile navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <!-- jQuery and SlickNav JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+</head>
+
+<!-- Body with unique ID for CSS stying -->
+<body id="events-page">
+    <!-- Header section containing logo and navigation menu -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+            <!-- Logo that linkes back to homepage -->
+            <a href="index_01.html"><img src="Logos/resized_logo.png" alt="TravelTails UK Logo" class="logo"></a>
+            
+            <!-- Main navigation menu containing dropdown menu -->
+            <ul id="menu">
+             <li><a href="index_01.html">TravelTails UK</a></li>
+                <li>
+                    <a href="service_offerings_02.html">Service Offerings</a>
+                    <ul>
+                        <li><a href="service_offerings_02.html#hotels-details">Pet-Friendly Hotels</a></li>
+                        <li><a href="service_offerings_02.html#insurance-details">Travel Insurance</a></li>
+                        <li><a href="service_offerings_02.html#membership-details">Club Membership</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_us_03.html">About Us</a></li>
+                <li><a href="user_reviews_04.html">User Reviews</a></li>
+                <li><a href="popular_destinations_05.html">Popular Destinations</a></li>
+                <li><a href="events_and_promotions_06.html" class="current">Events and Promotions</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+    <section class="promotions-container">
+        <!-- Left column -->
+        <div class="promotions-left">
+        <h1>Current Promotions</h1>
+        <p>Celebrate November with 50% off selected pet-friendly stays across the UK! Whether you're 
+            heading to the Lake District or the Dorset Coast, enjoy exclusive discounts for TravelTails 
+        Club members and first-time users.</p>
+        <ul>
+            <li><strong>November offer:</strong> Half-price bookings on selected hotels</li>
+            <li><strong>Holiday Photo Contest:</strong> Submit your best travel photo with your pet 
+                for a chance to win a free weekend getaway</li> 
+            <li><strong>New Pet Events:</strong> Join meetups and workshops in the Scottish Highlands and beyond</li>
+        </ul>
+        </div>
+        
+        <!-- Right column -->
+        <div class="promotions-right">
+        <h1>Featured Event: Pet Travel Workshop</h1>
+        <p>Join our expert Tasha Ingram for a live Q&A on pet behaviour and travel tips. Learn how 
+            to prepare your dog for long journeys, find emergency vet services, and make the most of your TravelTails experience.</p>
+        <p><strong>Date:</strong> December 10, 2025<br>
+                <strong>Location:</strong> Online (Zoom link will be emailed to registered users)</p>
+        <a href="contact_us.html" class="cta-button-events">Register Now</a>
+        </div>
+    </section>
+
+    <!-- External Links -->
+    <aside class="events-aside">
+        <h3>Useful Resources</h3>
+        <ul>
+            <li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/travel" target="_blank">RSPCA Travel Advice</a></li>
+            <li><a href="https://www.nationalparks.uk/visiting/pets" target="_blank">Pet-Friendly National Parks</a></li>
+            <li><a href="https://www.pettravel.com/" target="_blank">Pet Travel International</a></li>
+        </ul>
+    </aside>
+    </main>
+
+    <!-- Footer with copyright -->
+    <footer>
+        <p>&copy; 2025 TravelTails UK. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript to initialize SlickNav for mobile navigation-->
+    <script>
+    $(document).ready(function(){
+        $('#menu').slicknav({
+            prependTo: '.nav-container',
+            label: 'Menu'
+        });
+    });
+</script>
+</body>
+</html>

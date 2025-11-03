@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive layout setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags for search engines -->
+    <meta name="description" content="TravelTails UK helps pet owners find verified pet-friendly travel options across the UK.">
+    <meta name="keywords" content="pet travel, dog-friendly hotels, TravelTails UK, pet-friendly restaurants, UK travel with pets">
+    <!-- Browser's title -->
+    <title>Service Offerings</title>
+    <!-- main css page link -->
+    <link rel="stylesheet" href="main.css">
+    <!-- SlickNav CSS for responsive mobile navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <!-- jQuery and SlickNav JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <!-- Logos with link to homepage and navigation menu -->
+            <div class="nav-container">
+            <a href="index_01.html"><img src="Logos/resized_logo.png" alt="TravelTails UK Logo" class="logo"></a>            
+            <ul id="menu">
+                <li><a href="index_01.html">TravelTails UK</a></li>
+                <li>
+                    <a href="service_offerings_02.html">Service Offerings</a>
+                    <!-- Drop down menu -->
+                    <ul>
+                        <li><a href="service_offerings_02.html#hotels-details">Pet-Friendly Hotels</a></li>
+                        <li><a href="service_offerings_02.html#insurance-details">Travel Insurance</a></li>
+                        <li><a href="service_offerings_02.html#membership-details">Club Membership</a></li>
+                    </ul>
+                </li>
+
+                
+                <li><a href="about_us_03.html">About Us</a></li>
+                <li><a href="user_reviews_04.html" class="current">User Reviews</a></li>
+                <li><a href="popular_destinations_05.html">Popular Destinations</a></li>
+                <li><a href="events_and_promotions_06.html">Events and Promotions</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <!-- Main content area -->
+    <main>
+    <section class="user-reviews">
+        <h1>What Pet Owners Say</h1>
+        <div class="review-grid">
+            <div class="review-card">
+                <img src="Images/user-reviews3.png" alt="Dog face" class="review-icon">
+                <h3>ELLA P.</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Loved being able to filter by dog size and get real reviews."</p>
+            </div>
+            <div class="review-card">
+                <img src="Images/user-reviews.png" alt="Dog" class="review-icon">
+                <h3>HASSAN R.</h3>
+                <div class="stars">★★★★☆</div>
+                <p>"Used this to plan our Lake District trip - amazing app."</p>
+            </div>
+            <div class="review-card">
+                <img src="Images/user-reviews2.png" alt="Rabbit" class="review-icon">
+                <h3>ZOE W.</h3>
+                <div class="stars">★★★★★</div>
+                <p>"The emergency vet map gave me real peace of mind."</p>
+            </div>
+        </div>
+        <section class="cta-section">
+            <h3>🐾 Have a tail-wagging story to share?</h3>
+            <p>Join our community of pet-loving travelers and help others plan their perfect trip.</p>
+            <a href="register.html" class="cta" aria-label="Submit your pet travel review">Submit Your Review</a>
+        </section>
+    </section>
+    </main>
+    <!-- Footer with copyright -->
+    <footer>
+        <p>&copy; 2025 TravelTails UK. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript to initialize SlickNav for mobile navigation -->
+    <script>
+    $(document).ready(function(){
+        $('#menu').slicknav({
+            prependTo: '.nav-container',
+            label: 'Menu'
+        });
+    });
+</script>
+</body>
+</html>

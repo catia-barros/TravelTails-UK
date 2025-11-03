@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Declares the document as a HTML5-->
+<html lang="en">
+<head>
+  <!-- Character enconding and responsive layout setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO meta tags for search engines -->
+  <meta name="description" content="Contact TravelTails UK with questions, feedback, or partnership inquiries." />
+  <meta name="keywords" content="contact TravelTails UK, pet travel help, feedback, support" />
+  <!-- Title show in the browser -->
+  <title>Contact Us – TravelTails UK</title>
+  <!-- Link HTML page to the main.css -->
+  <link rel="stylesheet" href="main.css" />
+  <!-- SlickNav CSS for responsive mobile navigation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+  <!-- jQuery and SlickNav JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation menu logo -->
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-container">
+        <!-- Logo that links back to homepage -->
+        <a href="index_01.html"><img src="Logos/resized_logo.png" alt="TravelTails UK Logo" class="logo" /></a>
+        <ul id="menu">
+          <li><a href="index_01.html">Home</a></li>
+          <li><a href="service_offerings_02.html">Services</a></li>
+          <li><a href="events_and_promotions_06.html">Events</a></li>
+          <li><a href="about_us_03.html">About Us</a></li>
+          <li><a href="contact_us.html" class="current">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section class="signup-section">
+      <h1>📬 Get in Touch</h1>
+      <p>Have a question, suggestion, or just want to say hello? We’d love to hear from you!</p>
+
+      <!-- Contact form with validation -->
+      <form class="signup-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Email field -->
+        <div class="form-row">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Message Subject fied -->
+        <div class="form-row">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+
+        <!-- Message field -->
+        <div class="form-row">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="cta">Send Message</button>
+      </form>
+
+      <!-- Confirmation message displayed after form is submitted -->
+      <p id="confirmation-message" style="display: none; font-weight: bold; color: green; margin-top: 1rem;">
+        🎉 Thank you for reaching out! We’ll get back to you shortly.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy; 2025 TravelTails UK. All rights reserved.</p>
+  </footer>
+
+  <!-- Form and SlickNav JavaScript -->
+  <script>
+  $(document).ready(function () {
+    $('#menu').slicknav({ prependTo: '.nav-container', label: 'Menu' });
+
+    $('#contactForm').on('submit', function (e) {
+      e.preventDefault();
+      $('#confirmation-message').show();
+    });
+  });
+</script>
+</body>
+</html>

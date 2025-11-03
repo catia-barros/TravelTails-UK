@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Declares HTML5 document type -->
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive layout setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title displayed on the browser -->
+    <title>Join TravelTails UK Club</title>
+    <!-- Link main.css to this HTML page -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header with logo and navigation menu containing dropdowns -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="index_01.html"><img src="Logos/resized_logo.png" alt="TravelTails UK Logo" class="Logo"/></a>
+                <ul id="menu">
+                    <li><a href="index_01.html">Home</a></li>
+                    <li><a href="service_offerings_02.html">Services</a></li>
+                    <li><a href="membership_signup.html" class="current">Join Club</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <section class="signup-section">
+      <!-- Heading -->
+      <h1>🐾 Join the TravelTails UK Club</h1>
+      <p>Become a member and unlock exclusive perks for you and your pet.</p>
+
+      <!-- Membership form -->
+      <form class="signup-form" action="thank_you.html" method="GET">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="pet-name">Pet's Name</label>
+        <input type="text" id="pet-name" name="pet-name" />
+
+        <label for="membership-plan">Choose Plan</label>
+        <select id="membership-plan" name="membership-plan">
+          <option value="monthly">Monthly (£4.99)</option>
+          <option value="annual">Annual (£49.99)</option>
+        </select>
+
+        <!-- Submit form button -->
+        <button type="submit" class="cta">Join Now</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy; 2025 TravelTails UK. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

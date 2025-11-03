@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- This line declare the document of HTML type and its version -->
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive viewport setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags for search engines -->
+    <meta name="description" content="TravelTails UK helps pet owners find verified pet-friendly travel options across the UK.">
+    <meta name="keywords" content="pet travel, dog-friendly hotels, TravelTails UK, pet-friendly restaurants, UK travel with pets">
+    <!-- Title displayed in browser tab -->
+    <title>TravelTails UK</title>
+    <!-- Link to the CSS page -->
+    <link rel="stylesheet" href="home.css">
+    <!-- SlickNav CSS for the mobile navigation--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <!-- jQuery and SlickNav JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+</head>
+<body>
+    <!-- Header section with navigation menu -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+            <!-- Logo with link that returns back to homepage -->
+            <a href="index_01.html"><img src="Logos/resized_logo.png" alt="TravelTails UK Logo" class="logo"></a>
+            <!-- Main navigation menu with drop down menu -->
+            <ul id="menu">
+                <li><a href="index_01.html" class="current">TravelTails UK</a></li>
+                <li>
+                    <a href="service_offerings_02.html" aria-haspopup="true" aria-expanded="false" aria-label="Service Offerings menu">Service Offerings</a>
+                    <ul>
+                        <li><a href="service_offerings_02.html#hotels-details">Pet-Friendly Hotels</a></li>
+                        <li><a href="service_offerings_02.html#insurance-details">Travel Insurance</a></li>
+                        <li><a href="service_offerings_02.html#membership-details">Club Membership</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_us_03.html">About Us</a></li>
+                <li><a href="user_reviews_04.html">User Reviews</a></li>
+                <li><a href="popular_destinations_05.html">Popular Destinations</a></li>
+                <li><a href="events_and_promotions_06.html">Events and Promotions</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+    <section class="homepage">
+        <div class="page-container">
+        <div class="homepage-content">
+            <h1>Travel safely with your best friend</h1>
+            <p>TravelTails UK ensures every listing is verified and offers a genuine welcome to pets and their owners.</p>
+            <!-- Call-to-action buttons -->
+            <div class="homepage-buttons">
+                    <button onclick="location.href='service_offerings_02.html#hotels-details'">Find pet-friendly accommodations <span class="arrow">&gt;</span></button>
+                    <button onclick="location.href='popular_destinations_05.html'">Search restaurants and attractions <span class="arrow">&gt;</span></button>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    </main> 
+    <!-- Footer section with copyright -->
+    <footer>
+        <p>&copy; 2025 TravelTails UK. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize SlickNav for mobile navigation -->
+    <script>
+    $(document).ready(function(){
+        $('#menu').slicknav({
+            prependTo: '.nav-container',
+            label: 'Menu'
+        });
+    });
+</script>
+</body>
+</html>

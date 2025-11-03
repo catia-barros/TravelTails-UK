@@ -1,0 +1,291 @@
+/* Reset default browser styles and prevent horizontal scroll */
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Adds a white border below the navigation menu */
+header {
+    border-bottom: 4px solid #ffffff;
+}
+
+/* Flex layout pushes footer to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Styles the main navigation bar */
+nav{
+    background-color: #e6d6ca;
+    padding: 10px 20px;
+}
+
+/* Logo and navigation menu are displayed as a flex container */
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+/* Makes the logo scalable and responsive*/
+nav img.logo{
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+/* Position dropdown menus */
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e6d6ca;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 2px solid white;
+  z-index: 1000;
+}
+
+/* Drop down menu is displayed when hovered */
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Drop down menu style */
+nav ul li ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  background-color: #e6d6ca;
+  text-decoration: none;
+  display: block;
+  padding: 1em 0;
+  width: 210px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+/* Navigation menu is displayed horizontally */
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+nav ul li a{
+    text-align: center;
+    display: block;
+    width: 210px;
+    padding: 1em 0;
+    border-right: 2px solid white;
+    text-decoration: none;
+    background-color: #e6d6ca;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Current page is highlighted in blue */
+nav ul li a.current{
+    color: rgb(7, 7, 128);
+}
+
+/* Border for last navigation item is removed */
+nav ul li:last-child a{
+    border-right: none;
+}
+
+nav ul li ul li a:hover {
+  background-color: #d9c4b6;
+}
+
+.homepage {
+    background-image: url('Images/cat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 60px 0;
+    min-height: 100%;
+}
+
+.homepage-content{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 60%;
+    max-width: 700px;
+    height: 300px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 0;
+    transform: none;
+}
+
+.homepage-content h1{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homepage-content p{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Homepage buttons are displayed inside a container */
+.homepage-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.homepage-buttons button{
+    background-color: #e6d6ca;
+    color: black;
+    border: none;
+    padding: 18px 28px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Hover effects on the button */
+.homepage-buttons button:hover{
+
+    background-color: #d1bcab;
+}
+
+/* Style arrow icon inside the buttons */
+.arrow{
+    color: blue ;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+
+.homepage-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.page-container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2.5%;
+    box-sizing: border-box;
+}
+
+/* SlickNav menu is hidden by default*/
+.slicknav_menu {
+    display: none;
+}
+
+/* SlickNav menu is shower on smaller screens and dafault navigation is hidden */
+@media (max-width: 1500px){
+    .slicknav_menu {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    body{
+        font-size: 75%;
+    }
+    nav ul {
+        display: none;
+    }
+     .slicknav_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-content {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    nav ul {
+        display: none;
+    }   
+    .slicknav_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+      nav img.logo {
+        max-width: 100px;
+    }
+    footer{
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    background-color: rgb(7, 7, 128);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 4px solid white;
+}
+/* Links are styled for accessibility and usability */
+a {
+  color: blue;
+  font-weight: bold;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover,
+a:focus {
+  color: white;
+}
