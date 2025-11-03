@@ -39,4 +39,4 @@ To view the website:<br>
 </p>
 
 <h3>👩‍💻Author</h3>
-<p><bold>Cátia Barros</bold> - Master's student in Computer Science with Artificial Intelligence</p>
+<p><b>Cátia Barros</b> - Master's student in Computer Science with Artificial Intelligence</p>
