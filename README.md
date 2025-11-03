@@ -1,9 +1,8 @@
 <h1>TravelTails UK 🐾🐶</h1>
 
-<h2>Master's Project - Computer Science with Artificial Intelligence*/h2>
+<h2>Master's Project - Computer Science with Artificial Intelligence</h2>
 
 <p>TravelTails UK is a responsive, multi-page travel booking website designed for pet owners across the UK. It was developed as part of my Master's in Computer Science with Artificial Intelligence, showcasing my skills in front-end development, user experience design, and responsive web architecture. The site helps users find dog-friendly accommodations, explore pet-friendly destinations, and access exclusive services like travel insurance and club membership.</p>
-
 
 <h3>🌟Features</h3>
 <p>
