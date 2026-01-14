@@ -2,7 +2,7 @@
 
 <p>TravelTails UK is a responsive, multi-page travel booking website designed for pet owners across the UK. It was developed as part of my Master's in Computer Science with Artificial Intelligence, showcasing my skills in front-end development, user experience design, and responsive web architecture. The site helps users find dog-friendly accommodations, explore pet-friendly destinations, and access exclusive services like travel insurance and club membership.</p>
 
-<h3>🌟Features</h3>
+<h2>🌟Features</h2>
 <p>
 - Fluid layout with responsive design<br>
 - Two-tier navigation menu with SlickNav mobile support<br>
@@ -12,7 +12,7 @@
 - Pages for service offerings, user reviews, destinations, events, and registration<br>
 </p>
 
-<h3>🧠Challenges & Learning</h3>
+<h2>🧠Challenges & Learning</h2>
 <p>
 - Resizing and scaling the logo for responsiveness<br>
 - Styling dropdown menus across browsers<br>
@@ -20,7 +20,7 @@
 - Ensuring accessibility and usability across devices<br>
 </p>
 
-<h3>📚Technologies Used</h3>
+<h2>📚Technologies Used</h2>
 <p>
 - HTML5, CSS3<br>
 - JavaScript & jQuery<br>
@@ -28,7 +28,7 @@
 - Responsive design with media queries<br>
 </p>
 
-<h3>🚀Getting Started</h3>
+<h2>🚀Getting Started</h2>
 <p>
 To view the website:<br>
 1. Clone the repository<br>
@@ -36,5 +36,5 @@ To view the website:<br>
 > Note: Live Server is not required or supported for this project.<br>
 </p>
 
-<h3>👩‍💻Author</h3>
+<h2>👩‍💻Author</h2>
 <p><b>Cátia Barros</b> - Master's student in Computer Science with Artificial Intelligence</p>
